@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0125)https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/chapter_module_52615/user_27351/Indentation_quiz2.html -->
+<html><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>
+            Basic II
+        </title>
+    </head>
+    <body data-new-gr-c-s-check-loaded="14.1008.0" data-gr-ext-installed="">
+        <table> 
+            <thead>
+                <tr>
+                    <th>
+                        First Name
+                    </th>
+                    <th>
+                        Last Name
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Password
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Brendan
+                    </td>
+                    <td>
+                        Stanton
+                    </td>
+                    <td>
+                        brendanrocks@gmail.com
+                    </td>
+                    <td> 
+                        FakePassword123 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>
+            Here is a list of my favorite things:
+        </h1>
+        <ul>
+            <li>
+                Food
+            </li>
+            <li>
+                Bandwidth
+            </li>
+            <li>
+                Coffee
+            </li>
+            <li>
+                Beach
+            </li>
+        </ul>
+    
+
+</body></html>

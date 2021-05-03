@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0125)https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/chapter_module_52615/user_31045/Registrasion_form.html -->
+<html lang="en"><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title> Form Assignment</title>
+    </head>
+    <body data-new-gr-c-s-check-loaded="14.1008.0" data-gr-ext-installed="">
+        <form>
+            <p>This is a registration form&gt;</p>
+        
+            <label for="Fname">First Name:</label>
+            <input type="text" id="Fname" name="Fname">
+        
+            <label for="Lname">Last Name:</label>
+            <input type="text" id="Lname" name="Lname">
+        
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email">
+        
+            <label for="Password">Password:</label>
+            <input type="password" name="Password" id="Password">
+        
+            <label for="Password_Conftirm">Password Confirmation:</label>
+            <input type="password" id="Password_Conftirm" name="Password_Conftirm">
+        
+            <label for="Birthday">Birthday:</label>
+            <input type="date" id="Birthday" name="Birthday">
+            
+            <label for="Male">Male</label>
+            <input type="radio" id="Male" name="Gender" value="Male">
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="decline">Prefer not to say</label>
+            <input type="radio" id="decline" name="Gender" value="decline">
+        
+            <p>A short descpirtion about yourself:</p>
+            <textarea name="description"></textarea>
+        
+            <label for="Favorite_Language">Favorite Language</label>
+            <select name="Favorite Language" id="Favorite_Language">
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Python">Python</option>
+            </select>
+        
+            <input type="submit" value="submit">
+        </form>
+    
+</body></html>

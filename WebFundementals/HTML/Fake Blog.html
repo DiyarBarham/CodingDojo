@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)https://s3.us-east-1.amazonaws.com/General_V88/boomyeah2015/codingdojo/chapter_module_52615/user_27349/Fake_Blog.html -->
+<html lang="en"><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>My Fake Blog</title>
+    </head>
+
+    <body data-new-gr-c-s-check-loaded="14.1008.0" data-gr-ext-installed="">
+        <h1>Ronaldo</h1>
+        <img src="./Fake Blog_files/ronaldo.png" alt="ronaldo image" width="100" height="100">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat quis lorem vitae cursus. Proin ut
+            efficitur velit. Donec elementum accumsan rhoncus. Aliquam ultrices porttitor mollis. Donec maximus turpis arcu,
+            et feugiat ante dictum bibendum. Nunc sit amet feugiat risus. Nullam dui nisi, ultricies quis faucibus non,
+            dignissim eget odio. Ut magna arcu, bibendum aliquam nunc id, consequat lacinia mi. Pellentesque habitant morbi
+            tristique senectus et netus et malesuada fames ac turpis egestas. Duis lobortis tristique egestas. Nullam
+            eleifend molestie turpis, nec facilisis enim tincidunt eget. Phasellus vel risus neque. Mauris vulputate arcu
+            porta diam volutpat, vel ultrices mauris scelerisque. Ut semper eros eget sodales placerat.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>number of goals</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>2016</th>
+                    <th>40</th>
+                </tr>
+                <tr>
+                    <th>2017</th>
+                    <th>35</th>
+                </tr>
+                <tr>
+                    <th>2018</th>
+                    <th>50</th>
+                </tr>
+                <tr>
+                    <th>2019</th>
+                    <th>30</th>
+                </tr>
+                <tr>
+                    <th>2020</th>
+                    <th>38</th>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>Balon do'er 2018</li>
+            <li>Golden foot 2018</li>
+            <li>top scorer of chapionsleage 2017</li>
+        </ul>
+        <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo">Click here for more information about ronaldo</a>
+        <form>
+            <p>Please take this short servay</p>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email">
+
+            <label for="YEmail">Yes, send me more emails.</label>
+            <input type="radio" id="YEmail" name="EmailForm" value="YEmail">
+            <label for="NEmail">No, I don't want to recieve eamils.</label>
+            <input type="radio" id="NEmail" name="EmailForm" value="NEmail">
+
+            <p>How did you hear about us?</p>
+            <label for="Facebook">Facebook.</label>
+            <input type="checkbox" id="Facebook" name="feedback" value="Facebook">
+            <label for="newspaper">newspaper.</label>
+            <input type="checkbox" id="newspaper" name="feedback" value="newspaper">
+            <label for="Referral">Referral.</label>
+            <input type="checkbox" id="Referral" name="feedback" value="Referral">
+
+            <input type="submit" value="submit">
+        </form>
+    
+
+</body></html>
