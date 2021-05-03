@@ -1,0 +1,96 @@
+academy@DESKTOP-64MBUO9 MINGW64 ~
+$ cd desktop
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop
+$ mkdir test
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop
+$ cd test
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test
+$ touch index.html
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test
+$ touch styles.css
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test
+$ git init
+Initialized empty Git repository in C:/Users/academy/Desktop/test/.git/
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test (master)
+$ git add .
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   styles.css
+
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test (master)
+$ git commit -m "test"
+[master (root-commit) 5cb674a] test
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test (master)
+$ git add .
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test (master)
+$ git commit -m "update css"
+[master 2a5296b] update css
+ 1 file changed, 12 insertions(+)
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test (master)
+$ git log
+commit 2a5296b8ac3d2229377c376a7f4349ee1d9e3806 (HEAD -> master)
+Author: DiyarBarham <diyarbarham@gmail.com>
+Date:   Mon May 3 15:10:45 2021 +0300
+
+    update css
+
+commit 5cb674a20f2ff55308d93c14e8bdc6060bbda288
+Author: DiyarBarham <diyarbarham@gmail.com>
+Date:   Mon May 3 15:09:22 2021 +0300
+
+    test
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test (master)
+$ git revert -n HEAD
+
+academy@DESKTOP-64MBUO9 MINGW64 ~/desktop/test (master|REVERTING)
+$ git status
+On branch master
+You are currently reverting commit 2a5296b.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
