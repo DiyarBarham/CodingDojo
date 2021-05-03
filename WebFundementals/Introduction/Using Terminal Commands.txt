@@ -1,0 +1,106 @@
+Dr. A.Fattah@Dr MINGW64 ~
+$ cd desktop
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ mkdir test
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ touch index.html
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ cd test
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ touch style.css
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ touch command.txt
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ cd ..
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ mv index.html ../test
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ cd test
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ cp index.html index_2.html
+cp: cannot stat 'index.html': No such file or directory
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ cd ../
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ cd ../
+
+Dr. A.Fattah@Dr MINGW64 ~
+$ mv index.html ~/desktop/test
+mv: cannot stat 'index.html': No such file or directory
+
+Dr. A.Fattah@Dr MINGW64 ~
+$ cd desktop
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ cd test
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ touch index.html
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ cp index.html index_2.html
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ cd ..
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ mkdir destination
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ mv test/index_2.html destination
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ rm style.css
+rm: cannot remove 'style.css': No such file or directory
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ cd test
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ rm style.css
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop/test
+$ cd ..
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ rm -rf destination
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ open ~/desktop/test
+bash: open: command not found
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ open. test/style.css
+bash: open.: command not found
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ start test/command.txt
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$ ^C
+
+Dr. A.Fattah@Dr MINGW64 ~/desktop
+$
