@@ -1,0 +1,35 @@
+#1
+pip list
+it shows all the packages of python that are already downloaded
+
+#2
+deactivate
+it gits you out of the invironment
+
+#3
+pip3 list
+it gave me the same results as the pip list
+
+#4
+Call py3Env/Scripts/activate
+it activate the invironment
+
+#5
+pip install Django==2.2.4
+it download and installs the django, sqlparse, and pytz
+
+#6
+pip freeze
+list gives you all files related to python but freeze don't give files that are related to pip itself
+
+#7
+pip freeze > requirements.txt
+it seld the output of the freeze to a new file called requuirments.
+
+#8
+pip uninstall Django
+it uninistal the django
+
+#9
+pip show Django
+since I uninestalled the django it gives me that this package is not found
