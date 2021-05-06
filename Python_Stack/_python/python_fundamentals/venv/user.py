@@ -6,16 +6,20 @@ class User:
 
     def make_deposit(self, amount):
         self.account_balance += amount
+        return self
 
     def account_withdrawal(self, amount):
         self.account_balance -= amount
+        return self
 
     def display_user_balance(self):
         print(f"User: {self.name}, Balance: ${self.account_balance}")
+        return self
 
     def transfer_money(self,transferto, amount):
         self.account_balance -= amount
         transferto.account_balance += amount
+        return self
 
 user1 = User("Ahmad", "abc@abc.com")
 user2 = User("Mohammed", "aaa@abc.com")
