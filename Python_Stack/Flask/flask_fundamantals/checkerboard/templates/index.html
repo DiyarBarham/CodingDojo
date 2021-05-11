@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>checkerboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .black{
+            background-color: {{color1}};
+        }
+        .green{
+            background-color: {{color2}};
+        }
+    </style>
 </head>
 <body>
     {% for y in range (0,   height)%}

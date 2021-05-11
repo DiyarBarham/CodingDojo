@@ -9,5 +9,8 @@ def chh(x):
 @app.route('/<x>/<y>')
 def chhd(x, y):
     return render_template('index.html', width=int(x), height=int(y))
+@app.route('/<x>/<y>/<color1>/<color2>')
+def chhds(x, y, color1, color2):
+    return render_template('index.html', width=int(x), height=int(y), color1= color1, color2=color2)
 if __name__ == "__main__":
     app.run(debug=True)
