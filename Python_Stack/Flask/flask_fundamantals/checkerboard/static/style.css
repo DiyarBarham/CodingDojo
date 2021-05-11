@@ -1,0 +1,18 @@
+*{
+    margin: auto;
+    padding: 0px;
+}
+.main{
+    display: flex;
+    justify-content: flex-start;
+}
+.black{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+.green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}

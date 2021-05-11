@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkerboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% for y in range (0,   height)%}
+        <div class="main" style="width: {{width}}00px;">
+            
+            {% if y%2 == 1 %}
+                {% for x in range (0,   width)%}
+                    {% if x%2 == 0 %}
+                        <div class="black"></div>
+                    {% endif %}
+                    {% if x%2 == 1 %}
+                        <div class="green"></div>
+                    {% endif %}
+                {%endfor%}
+            {% endif %}
+            {% if y%2 == 0 %}
+                {% for x in range (0,   width)%}
+                    {% if x%2 == 0 %}
+                        <div class="green"></div>
+                    {% endif %}
+                    {% if x%2 == 1 %}
+                        <div class="black"></div>
+                    {% endif %}
+                {%endfor%}     
+                    
+            {% endif %}
+                
+            
+        </div>
+    {%endfor%}
+    
+</body>
+</html>
