@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the great Number Game!</h1>
+    <h3>I am thinking of a number between 1 and 100</h3>
+    <h3>Take a guess!</h3>
+    <h1 
+        {% if request.session.text == 'Too Low' %}
+            style="background-color: red; width: 200px; height: 100px; text-align: center; padding-top: 50px;"
+        {% endif %}
+        {% if request.session.text == 'Too High' %}
+            style="background-color: blue; width: 200px; height: 100px; text-align: center; padding-top: 50px;"
+        {% endif %}
+
+    >{{request.session.text}}</h1>
+    <br>
+    <form action="/" method="post">
+        {% csrf_token %}
+        <input type="text" name="numb" id="numb">
+        <input type="submit" value="Submit">
+    </form>
+    <h1>{{ request.session.num }}</h1>
+    <h1> Current Attempt: {{ request.session.attempt }}</h1>
+    <a href="/random"><button>Change Number</button></a>
+</body>
+</html>
