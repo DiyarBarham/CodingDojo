@@ -7,7 +7,12 @@
     <title>date</title>
 </head>
 <body>
-    <h3>the current time and date:</h3>
-    <h1>{{ time }}</h1>
+    <form action="/some_route" method="post">
+        {% csrf_token %}
+        <p>Field One: <input name="one" type="text"></p>
+        <p>Field Two: <input name="two" type="text"></p>
+        <button type="submit">Submit</button>
+      </form>
+      
 </body>
 </html>
