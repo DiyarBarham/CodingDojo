@@ -11,3 +11,7 @@ def index(request):
 def destroy(request):
     del request.session['count']
     return redirect('/')
+
+def vw(request):
+    request.session['count'] +=1
+    return redirect('/')
