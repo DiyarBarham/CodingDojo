@@ -10,3 +10,9 @@ def index(request):
 def form(request):
     user.objects.create(first_name=request.POST['fname'], last_name=request.POST['lname'], email_address=request.POST['email'], age=request.POST['age'])
     return redirect('/')
+
+def id(request, iduser):
+    context = {
+        'user': user.objects.get(id=iduser)
+    }
+    return render(request, 'get.html', context)
