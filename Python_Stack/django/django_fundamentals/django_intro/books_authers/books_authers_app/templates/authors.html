@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        table{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+        th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <form action="/processauthor" method="post">
+            {% csrf_token %}
+            <h1>Add an Author</h1>
+            Name <input type="text" name="name">
+            Notes <input type="text" name="notes">
+            <input type="submit" value="Add">
+        </form>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+            {%for author in authors%}
+            <tr>
+                <td>{{author.id}}</td>
+                <td>{{author.name}}</td>
+                <td><a href="/authors/{{author.id}}">view</a></td>
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+</body>
+</html>

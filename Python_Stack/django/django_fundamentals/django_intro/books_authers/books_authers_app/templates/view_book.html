@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>PHP</h1>
+    <div class="flex">
+        <h3>ID: </h3>
+        <h4> {{books.id}}</h4>
+    </div>
+    <div class="flex">
+        <h3>Descreption: </h3>
+        <h4>{{books.desc}}</h4>
+    </div>
+    <h3>Authors:</h3>
+    <ul>
+        {%for author in authors%}
+        <li>{{author.name}}</li>
+        {%endfor%}
+    </ul>
+    <form action="/books/{{books.id}}" method="post">
+        {% csrf_token %}
+        <select name="auth">
+            {%for auth in allauthors%}
+            {%if auth not in authors%}
+            <option value="{{auth.name}}">{{auth.name}}</option>
+            {%endif%}
+            {%endfor%}
+        </select>
+        <input type="hidden" name="hid" value="{{books.id}}">
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>
