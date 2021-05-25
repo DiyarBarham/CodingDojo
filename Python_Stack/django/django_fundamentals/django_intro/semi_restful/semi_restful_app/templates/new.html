@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semi-Restful TV Shows</title>
+    <style>
+        .link{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <a href="/shows" class="link">Go Back</a>
+    <center>
+        <h1>Add a New Show</h1>
+        <form action="/shows/new/render" method="POST">
+            {% csrf_token %}
+            Title: <input type="text" name="title"><br><br>
+            Network: <input type="text" name="network">
+            Release Date: <input type="date" name="release_date"><br><br>
+            Description: <textarea name="desc" rows="4" cols="50" ></textarea><br><br>
+            <button>Create</button>
+        </form>
+    </center>
+</body>
+</html>
