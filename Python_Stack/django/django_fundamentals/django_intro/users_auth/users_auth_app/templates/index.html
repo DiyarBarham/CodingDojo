@@ -23,9 +23,16 @@
         <div class="col">
           <div class="collapse multi-collapse" id="multiCollapseExample1">
             <div class="card card-body">
+                {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
                 <form action="/login" method="post">
                     {% csrf_token %}
-                    Username: <input type="text" name="username">
+                    email: <input type="text" name="email">
                     Password: <input type="password" name="passwd">
                     <input type="submit" value="Login">
                 </form>
@@ -35,9 +42,17 @@
         <div class="col">
           <div class="collapse multi-collapse" id="multiCollapseExample2">
             <div class="card card-body">
+                {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
                 <form action="/register" method="post">
                     {% csrf_token %}
-                    Username: <input type="text" name="username">
+                    firstname: <input type="text" name="firstname">
+                    lastname: <input type="text" name="lastname">
                     Email: <input type="text" name="email">
                     Address: <input type="text" name="address">
                     Password: <input type="password" name="passwd">
