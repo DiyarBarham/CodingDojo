@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, HttpResponse
-from .models import User
+from .models import User, Messages, Comments
 from django.contrib import messages
 import bcrypt
 
@@ -37,10 +37,19 @@ def welcome(request):
         return redirect('/')
     user = User.objects.filter(email=request.session['user'])
     context ={
-        'loggeduser': user[0]
+        'loggeduser': user[0],
+        'comments': Comments.objects.all(),
+        'posts': Messages.objects.all()
+
     }
     return render(request, 'welcome.html', context)
 def logout(request):
     if 'user' in request.session:
         request.session.clear()
     return redirect('/')
+def post(request):
+    Messages.objects.create(message=request.POST['postmsgbox'], user=User.objects.get(id=request.POST['userid']))
+    return redirect('/welcome')
+def comment(request):
+    Comments.objects.create(comment=request.POST['ncomment'], usercomment=User.objects.get(id=request.POST['userid']), message=Messages.objects.get(id=request.POST['postid']))
+    return redirect('/welcome')

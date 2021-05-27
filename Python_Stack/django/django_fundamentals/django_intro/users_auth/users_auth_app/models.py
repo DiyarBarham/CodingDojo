@@ -4,7 +4,7 @@ class UserManager(models.Manager):
     def basic_validator(self, postData):
         errors = {}
         # add keys and values to errors dictionary for each invalid field
-        if len(postData['firstname']) < 2 or not re.compile(r'^[a-zA-Z}+$'):
+        if len(postData['firstname']) < 2 or not re.compile(r'^[a-zA-Z]+$'):
             errors["firstname"] = "first name should be at least 2 characters"
         if len(postData['lastname']) < 2:
             errors["lastname"] = "last name should be at least 2 characters"
@@ -25,3 +25,16 @@ class User(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     objects = UserManager()
+
+class Messages(models.Model):
+    message = models.TextField()
+    user = models.ForeignKey(User, related_name='a_message', on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+class Comments(models.Model):
+    comment = models.TextField()
+    usercomment = models.ForeignKey(User, related_name='a_comment', on_delete=models.CASCADE)
+    message = models.ForeignKey(Messages, related_name='message_comment', on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)

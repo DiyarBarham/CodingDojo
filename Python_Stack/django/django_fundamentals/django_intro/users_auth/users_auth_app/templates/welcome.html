@@ -14,5 +14,30 @@
 <body>
     <a href="/logout" class="link">Logout</a>
     <h3>Welcome {{loggeduser.firstname}}</h3>
+    <form action="/postmessage" method="post">
+        {% csrf_token %}
+        <p>Post a message</p>
+        <input type="hidden" name="userid", value="{{loggeduser.id}}">
+        <textarea name="postmsgbox" cols="30" rows="10"></textarea>
+        <input type="submit" value="Post a message">
+    </form>
+    {%for post in posts%}
+        <h4>{{post.user.firstname}} {{post.user.lastname}} {{post.created_at}}</h4>
+        <p>{{post.message}}</p>
+        {%for comment in comments%}
+            {%if comment.message == post%}
+            <h5>{{comment.usercomment.firstname}} {{comment.usercomment.lastname}} {{comment.created_at}}</h5>
+            <p>{{comment.comment}}</p>
+            {%endif%}
+        {%endfor%}
+        <p>Post a comment</p>
+        <form action="/newcomment" method="post">
+            {% csrf_token %}
+        <input type="hidden" name="postid" value="{{post.id}}">
+        <input type="hidden" name="userid", value="{{loggeduser.id}}">
+        <textarea name="ncomment" cols="30" rows="10"></textarea>
+        <input type="submit" value="Post a comment">
+        </form>
+    {%endfor%}
 </body>
 </html>
