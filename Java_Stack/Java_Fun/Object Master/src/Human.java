@@ -1,13 +1,12 @@
 public class Human {
-	private int strength, intelligence, stealth, health;
+	private int strength = 3, intelligence = 3, stealth = 3, health = 100;
 	
-	public Human() {
-		this.strength = 3;
-		this.intelligence = 3;
-		this.stealth = 3;
-		this.health = 100;
+	public Human(int health, int intelligence) {
+		this.health = health;
+		this.intelligence = intelligence;
 	}
-	
+	public Human() {
+	}
 	public void attack(Human h) {
 		h.health -= this.strength;
 	}
