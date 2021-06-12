@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <style>
+        .link{
+            float: right;
+        }
+        .size{
+            font-size: 30px;
+        }
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 500px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+    .unlike{
+        background-color: yellow;
+
+    }
+    .like{
+        background-color: green;
+    }
+    </style>
+</head>
+<body>
+    <a href="/logout" class="link size">Logout</a>
+    <h1>Hello, {{theuser.firstname}}!</h1>
+    <h4>Here is the list of your firends:</h4>
+
+    <table>
+        <tr>
+            <th>Alias</th>
+            <th>Action</th>
+        </tr>
+        {%for id in %}
+    </table>
+</body>
+</html>
