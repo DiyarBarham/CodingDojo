@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- CSS only -->
-<title>Thoughts Board</title>
+<title>LOgin/Register</title>
 <style>
   .a{
     display: inline-block;
@@ -23,14 +23,29 @@
 </head>
 <body>
   <h1>Welcome!</h1>
+  {% if messages %}
+  <ul class="messages">
+  {% for message in messages %}
+  <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+  <div class="a">
+
+    <form action="/register" method="post">
+        {% csrf_token %}
+        <div class="asd">firstname: <input type="text" name="firstname"></div>
+        <div class="asd">Alais: <input type="text" name="alias"></div>
+        <div class="asd">Email: <input type="text" name="email"></div>
+        <div class="asd">Password: <input type="password" name="passwd"></div>
+        *Password should be atleast 8 characters
+        <div class="asd">Confirm Password: <input type="password" name="confirmpass"></div>
+        <div class="asd">Date of Birth: <input type="date" name="birthday"></div>
+        <div><input type="submit" value="SignUp"></div>
+    </form>            
+</div>        
 <div class="a">
-                {% if messages %}
-<ul class="messages">
-    {% for message in messages %}
-        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-    {% endfor %}
-</ul>
-{% endif %}
+
                 <form action="/login" method="post">
                     {% csrf_token %}
                     <div class="asd">email: <input type="text" name="email"></div>
@@ -39,23 +54,6 @@
                     <input type="submit" value="Login">
                 </form>
 </div>
-<div class="a">
-                {% if messages %}
-<ul class="messages">
-    {% for message in messages %}
-        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-    {% endfor %}
-</ul>
-{% endif %}
-                <form action="/register" method="post">
-                    {% csrf_token %}
-                    <div class="asd">firstname: <input type="text" name="firstname"></div>
-                    <div class="asd">lastname: <input type="text" name="lastname"></div>
-                    <div class="asd">Email: <input type="text" name="email"></div>
-                    <div class="asd">Password: <input type="password" name="passwd"></div>
-                    <div class="asd">Confirm Password: <input type="password" name="confirmpass"></div>
-                    <div><input type="submit" value="SignUp"></div>
-                </form>            
-            </div>                           
+                   
 </body>
 </html>
