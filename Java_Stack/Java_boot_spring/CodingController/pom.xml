@@ -8,11 +8,11 @@
 		<version>2.5.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.codingdojo.StringsAssignment</groupId>
-	<artifactId>StringsAssignment</artifactId>
+	<groupId>com.codingdojo.CodingController</groupId>
+	<artifactId>CodingController</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>StringsAssignment</name>
+	<name>CodingController</name>
 	<description>first project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
