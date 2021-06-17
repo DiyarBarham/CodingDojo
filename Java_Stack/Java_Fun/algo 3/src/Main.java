@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Main {
 
@@ -8,7 +9,8 @@ public class Main {
 		System.out.println(s.toString());
 		sh.setColor("blue");
 		System.out.println(sh.getColor());
-
+		
+		
 	}
 
 }
