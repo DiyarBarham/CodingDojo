@@ -52,7 +52,7 @@ const [passworderror, setpassworderror] = useState("");
 const [confirmPassworderror, setconfirmPassworderror] = useState("");
   const handleconfirmPassword = (e) => {
     setConfirmPassword(e.target.value);
-    if(e.target.value != password) {
+    if(e.target.value !== password) {
         setconfirmPassworderror("Password must match.");
     }else{
         setconfirmPassworderror("");
@@ -65,7 +65,6 @@ const [confirmPassworderror, setconfirmPassworderror] = useState("");
                     
         <div>
                           <label>firstName: </label>
-                          
           <input type="text" onChange={(e) => setFirstname(e.target.value), handlefirstName } />
                       {
                     firstnameerror
