@@ -1895,7 +1895,7 @@ sectors, besides looking forward to spread worldwide.</p>
 							<div class="col-lg-4 col-md-6">
 								<div class="member" data-aos="fade-up" data-aos-delay="100">
 									<div class="pic">
-										<img src="/img/team/image2.jpg" width="407" height="407" class="img-fluid" alt="">
+										<img src="/img/team/ibrahem.jpeg" width="407" height="407" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>Walter White</h4>
@@ -1908,7 +1908,7 @@ sectors, besides looking forward to spread worldwide.</p>
 								data-aos-delay="200">
 								<div class="member">
 									<div class="pic">
-										<img src="/img/team/image19.jpg" class="img-fluid" alt="">
+										<img src="/img/team/qweqweqwe.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>Sarah Jhonson</h4>
@@ -1927,7 +1927,7 @@ sectors, besides looking forward to spread worldwide.</p>
 								data-aos-delay="300">
 								<div class="member">
 									<div class="pic">
-										<img src="/img/team/image2.jpg" class="img-fluid" alt="">
+										<img src="/img/team/aaaasd.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>William Anderson</h4>
@@ -1950,7 +1950,7 @@ sectors, besides looking forward to spread worldwide.</p>
 							<div class="col-lg-4 col-md-6">
 								<div class="member" data-aos="fade-up" data-aos-delay="100">
 									<div class="pic">
-										<img src="/img/team/team-1.jpg" class="img-fluid" alt="">
+										<img src="/img/team/asdasd.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>Walter White</h4>
@@ -1969,7 +1969,7 @@ sectors, besides looking forward to spread worldwide.</p>
 								data-aos-delay="200">
 								<div class="member">
 									<div class="pic">
-										<img src="/img/team/team-2.jpg" class="img-fluid" alt="">
+										<img src="/img/team/asss.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>Sarah Jhonson</h4>
@@ -1988,7 +1988,7 @@ sectors, besides looking forward to spread worldwide.</p>
 								data-aos-delay="300">
 								<div class="member">
 									<div class="pic">
-										<img src="/img/team/team-3.jpg" class="img-fluid" alt="">
+										<img src="/img/team/zxc.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>William Anderson</h4>
@@ -2011,7 +2011,7 @@ sectors, besides looking forward to spread worldwide.</p>
 							<div class="col-lg-4 col-md-6">
 								<div class="member" data-aos="fade-up" data-aos-delay="100">
 									<div class="pic">
-										<img src="/img/team/team-1.jpg" class="img-fluid" alt="">
+										<img src="/img/team/qw.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>Walter White</h4>
@@ -2030,7 +2030,7 @@ sectors, besides looking forward to spread worldwide.</p>
 								data-aos-delay="200">
 								<div class="member">
 									<div class="pic">
-										<img src="/img/team/team-2.jpg" class="img-fluid" alt="">
+										<img src="/img/team/qwe.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>Sarah Jhonson</h4>
@@ -2049,7 +2049,7 @@ sectors, besides looking forward to spread worldwide.</p>
 								data-aos-delay="300">
 								<div class="member">
 									<div class="pic">
-										<img src="/img/team/team-3.jpg" class="img-fluid" alt="">
+										<img src="/img/team/qweqwe.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>William Anderson</h4>
@@ -2072,7 +2072,7 @@ sectors, besides looking forward to spread worldwide.</p>
 							<div class="col-lg-4 col-md-6">
 								<div class="member" data-aos="fade-up" data-aos-delay="100">
 									<div class="pic">
-										<img src="/img/team/team-1.jpg" class="img-fluid" alt="">
+										<img src="/img/team/a.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>Walter White</h4>
@@ -2091,7 +2091,7 @@ sectors, besides looking forward to spread worldwide.</p>
 								data-aos-delay="200">
 								<div class="member">
 									<div class="pic">
-										<img src="/img/team/team-2.jpg" class="img-fluid" alt="">
+										<img src="/img/team/zxccc.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>Sarah Jhonson</h4>
@@ -2110,7 +2110,7 @@ sectors, besides looking forward to spread worldwide.</p>
 								data-aos-delay="300">
 								<div class="member">
 									<div class="pic">
-										<img src="/img/team/team-3.jpg" class="img-fluid" alt="">
+										<img src="/img/team/zxczxc.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>William Anderson</h4>
@@ -2133,7 +2133,7 @@ sectors, besides looking forward to spread worldwide.</p>
 							<div class="col-lg-4 col-md-6">
 								<div class="member" data-aos="fade-up" data-aos-delay="100">
 									<div class="pic">
-										<img src="/img/team/team-1.jpg" class="img-fluid" alt="">
+										<img src="/img/team/zxcs.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>Walter White</h4>
@@ -2152,7 +2152,7 @@ sectors, besides looking forward to spread worldwide.</p>
 								data-aos-delay="200">
 								<div class="member">
 									<div class="pic">
-										<img src="/img/team/team-2.jpg" class="img-fluid" alt="">
+										<img src="/img/team/aaa.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>Sarah Jhonson</h4>
@@ -2171,7 +2171,7 @@ sectors, besides looking forward to spread worldwide.</p>
 								data-aos-delay="300">
 								<div class="member">
 									<div class="pic">
-										<img src="/img/team/team-3.jpg" class="img-fluid" alt="">
+										<img src="/img/team/asdasdasd.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>William Anderson</h4>
@@ -2194,7 +2194,7 @@ sectors, besides looking forward to spread worldwide.</p>
 							<div class="col-lg-4 col-md-6">
 								<div class="member" data-aos="fade-up" data-aos-delay="100">
 									<div class="pic">
-										<img src="/img/team/team-1.jpg" class="img-fluid" alt="">
+										<img src="/img/team/aa.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>Walter White</h4>
@@ -2213,7 +2213,7 @@ sectors, besides looking forward to spread worldwide.</p>
 								data-aos-delay="200">
 								<div class="member">
 									<div class="pic">
-										<img src="/img/team/team-2.jpg" class="img-fluid" alt="">
+										<img src="/img/team/wqdsa.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>Sarah Jhonson</h4>
@@ -2232,7 +2232,7 @@ sectors, besides looking forward to spread worldwide.</p>
 								data-aos-delay="300">
 								<div class="member">
 									<div class="pic">
-										<img src="/img/team/team-3.jpg" class="img-fluid" alt="">
+										<img src="/img/team/asdaw.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
 										<h4>William Anderson</h4>
