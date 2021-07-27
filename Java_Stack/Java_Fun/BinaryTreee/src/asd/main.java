@@ -11,6 +11,7 @@ public class main {
 	    bt.add(5);
 	    bt.add(7);
 	    bt.add(9);
+	    bt.print();
 	}
 
 }

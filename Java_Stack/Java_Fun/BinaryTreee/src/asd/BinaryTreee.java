@@ -25,4 +25,20 @@ public class BinaryTreee {
 
 	    return current;
 	}
+	
+	public void print () {
+		Node t = root;
+		printtree(t);
+		
+	}
+	public void printtree(Node n) {
+		System.out.println(n.value);
+		if(n.left != null) {
+			printtree(n.left);
+		}
+		if(n.right != null) {
+			printtree(n.right);
+			
+		}
+	}
 }
