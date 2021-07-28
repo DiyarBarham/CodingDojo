@@ -149,13 +149,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 100
+
+
 %
 {
 transform
+
+
 :
-rotate(
+
+
+rotate
+(
+
+
 360deg
-);
+
+
+)
+;
+
+
 }
 }
 @
@@ -164,13 +178,27 @@ keyframes animate-preloader { 0% {
 }
 
 100
+
+
 %
 {
 transform
+
+
 :
-rotate(
+
+
+rotate
+(
+
+
 360deg
-);
+
+
+)
+;
+
+
 }
 }
 
@@ -792,18 +820,39 @@ section {
 }
 
 100
+
+
 %
 {
 transform
+
+
 :
-scale(
+
+
+scale
+(
+
+
 1
 ,
 1
-);
+
+
+)
+;
+
+
 opacity
+
+
 :
-0;
+
+
+0
+;
+
+
 }
 }
 @
@@ -813,18 +862,39 @@ keyframes pulsate-btn { 0% {
 }
 
 100
+
+
 %
 {
 transform
+
+
 :
-scale(
+
+
+scale
+(
+
+
 1
 ,
 1
-);
+
+
+)
+;
+
+
 opacity
+
+
 :
-0;
+
+
+0
+;
+
+
 }
 }
 
@@ -1533,13 +1603,27 @@ opacity
 }
 
 100
+
+
 %
 {
 transform
+
+
 :
-rotate(
+
+
+rotate
+(
+
+
 360deg
-);
+
+
+)
+;
+
+
 }
 }
 @
@@ -1548,13 +1632,27 @@ keyframes animate-loading { 0% {
 }
 
 100
+
+
 %
 {
 transform
+
+
 :
-rotate(
+
+
+rotate
+(
+
+
 360deg
-);
+
+
+)
+;
+
+
 }
 }
 
@@ -1824,15 +1922,13 @@ rotate(
 										<h5 class="card-title">
 											<a href="">Our Mission</a>
 										</h5>
-										<p class="card-text">
-											Developing the educational system and Process, and
-make it more interactive, interesting, and stimulating.
-Constantly expanding the targeted groups to include
-all educational levels.
-Developing and updating the product to ensure its
-sustainability, and matching our vision to merge it in
-different sectors, locally, regionally, and worldwide
-										</p>
+										<p class="card-text">Developing the educational system and
+											Process, and make it more interactive, interesting, and
+											stimulating. Constantly expanding the targeted groups to
+											include all educational levels. Developing and updating the
+											product to ensure its sustainability, and matching our vision
+											to merge it in different sectors, locally, regionally, and
+											worldwide</p>
 									</div>
 								</div>
 							</div>
@@ -1867,12 +1963,12 @@ different sectors, locally, regionally, and worldwide
 										<h5 class="card-title">
 											<a href="">Our Vision</a>
 										</h5>
-										<p class="card-text">We adhere to our pursuit, to become a leader in
-presenting latest technical solutions in learning sector
-through Augmented Reality technique, then in other possible
-fields such as entertaining and occupational fields, and
-merging new items with the latest technology in many other
-sectors, besides looking forward to spread worldwide.</p>
+										<p class="card-text">We adhere to our pursuit, to become a
+											leader in presenting latest technical solutions in learning
+											sector through Augmented Reality technique, then in other
+											possible fields such as entertaining and occupational fields,
+											and merging new items with the latest technology in many
+											other sectors, besides looking forward to spread worldwide.</p>
 									</div>
 								</div>
 							</div>
@@ -1895,11 +1991,12 @@ sectors, besides looking forward to spread worldwide.</p>
 							<div class="col-lg-4 col-md-6">
 								<div class="member" data-aos="fade-up" data-aos-delay="100">
 									<div class="pic">
-										<img src="/img/team/ibrahem.jpeg" width="407" height="407" class="img-fluid" alt="">
+										<img src="/img/team/ibrahem.jpeg" width="407" height="407"
+											class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>Walter White</h4>
-										<span>Chief Executive Officer</span>
+										<h4>Ibrahem Harb</h4>
+										<span>COO</span>
 									</div>
 								</div>
 							</div>
@@ -1911,14 +2008,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/qweqweqwe.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>Sarah Jhonson</h4>
-										<span>Product Manager</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Asaad Halayqa</h4>
+										<span>CEO</span>
+										<div class="social"></div>
 									</div>
 								</div>
 							</div>
@@ -1930,14 +2022,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/aaaasd.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>William Anderson</h4>
-										<span>CTO</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Dania Salameh</h4>
+										<span>Marketing Manger</span>
+										<div class="social"></div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-6" data-aos="fade-up"
@@ -1953,14 +2040,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/asdasd.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>Walter White</h4>
-										<span>Chief Executive Officer</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Diyar Barham</h4>
+										<span>Chief information officer</span>
+										<div class="social"></div>
 									</div>
 								</div>
 							</div>
@@ -1972,14 +2054,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/asss.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>Sarah Jhonson</h4>
-										<span>Product Manager</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Tariq Odeh</h4>
+										<span>Cheif Technology Officer</span>
+										<div class="social"></div>
 									</div>
 								</div>
 							</div>
@@ -1991,14 +2068,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/zxc.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>William Anderson</h4>
-										<span>CTO</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Razan Abul Homos</h4>
+										<span>Human Resource Manager</span>
+										<div class="social"></div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-6" data-aos="fade-up"
@@ -2014,14 +2086,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/qw.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>Walter White</h4>
-										<span>Chief Executive Officer</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Obada Jaras</h4>
+										<span>Cheif Product Officer</span>
+										<div class="social"></div>
 									</div>
 								</div>
 							</div>
@@ -2033,14 +2100,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/qwe.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>Sarah Jhonson</h4>
-										<span>Product Manager</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Dana Hammad</h4>
+										<span>Digital Marketing Manager</span>
+										<div class="social"></div>
 									</div>
 								</div>
 							</div>
@@ -2052,14 +2114,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/qweqwe.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>William Anderson</h4>
-										<span>CTO</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Hiba Yahia</h4>
+										<span>Logsitics Manager</span>
+										<div class="social"></div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-6" data-aos="fade-up"
@@ -2075,14 +2132,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/a.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>Walter White</h4>
-										<span>Chief Executive Officer</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Randa Bahar</h4>
+										<span>Chief Financial Officer</span>
+										<div class="social"></div>
 									</div>
 								</div>
 							</div>
@@ -2094,14 +2146,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/zxccc.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>Sarah Jhonson</h4>
-										<span>Product Manager</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Saja Attieh</h4>
+										<span>Sales Manager</span>
+										<div class="social"></div>
 									</div>
 								</div>
 							</div>
@@ -2113,14 +2160,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/zxczxc.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>William Anderson</h4>
-										<span>CTO</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Tala Hammad</h4>
+										<span>Contest Preparation Supervisor</span>
+										<div class="social"></div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-6" data-aos="fade-up"
@@ -2136,14 +2178,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/zxcs.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>Walter White</h4>
-										<span>Chief Executive Officer</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Ayat AbuKata</h4>
+										<span>Employee Relations Supervisor</span>
+										<div class="social"></div>
 									</div>
 								</div>
 							</div>
@@ -2155,14 +2192,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/aaa.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>Sarah Jhonson</h4>
-										<span>Product Manager</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Shahd Musleh</h4>
+										<span>Treasurer</span>
+										<div class="social"></div>
 									</div>
 								</div>
 							</div>
@@ -2174,14 +2206,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/asdasdasd.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>William Anderson</h4>
-										<span>CTO</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Yazan Hakawati</h4>
+										<span>Website and Graphic Design Manager</span>
+										<div class="social"></div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-6" data-aos="fade-up"
@@ -2197,14 +2224,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/aa.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>Walter White</h4>
-										<span>Chief Executive Officer</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Woroud Hajjaji</h4>
+										<span>Purchases Manager</span>
+										<div class="social"></div>
 									</div>
 								</div>
 							</div>
@@ -2216,14 +2238,9 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/wqdsa.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>Sarah Jhonson</h4>
-										<span>Product Manager</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Karim Halayqa</h4>
+										<span>UX Designer & UI Developer</span>
+										<div class="social"></div>
 									</div>
 								</div>
 							</div>
@@ -2235,14 +2252,44 @@ sectors, besides looking forward to spread worldwide.</p>
 										<img src="/img/team/asdaw.jpeg" class="img-fluid" alt="">
 									</div>
 									<div class="member-info">
-										<h4>William Anderson</h4>
-										<span>CTO</span>
-										<div class="social">
-											<a href=""><i class="bi bi-twitter"></i></a> <a href=""><i
-												class="bi bi-facebook"></i></a> <a href=""><i
-												class="bi bi-instagram"></i></a> <a href=""><i
-												class="bi bi-linkedin"></i></a>
-										</div>
+										<h4>Yomna Hamidi</h4>
+										<span>Public Relations Manager</span>
+										<div class="social"></div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6" data-aos="fade-up"
+									data-aos-delay="300"></div>
+							</div>
+
+						</div>
+						<div class="row">
+
+							<div class="col-lg-4 col-md-6">
+								<div class="member" data-aos="fade-up" data-aos-delay="100">
+									<div class="pic">
+										<img src="/img/team/asd.jpeg" class="img-fluid" alt="">
+									</div>
+									<div class="member-info">
+										<h4>Bara Imran</h4>
+										<span>Pricing Manager</span>
+										<div class="social"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6" data-aos="fade-up"
+								data-aos-delay="200"></div>
+
+							<div class="col-lg-4 col-md-6" data-aos="fade-up"
+								data-aos-delay="300">
+								<div class="member">
+									<div class="pic">
+										<img src="/img/team/Noor1.jpeg" class="img-fluid" alt="">
+									</div>
+									<div class="member-info">
+										<h4>Nour Tabanjha</h4>
+										<span>Company reports Director</span>
+										<div class="social"></div>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-6" data-aos="fade-up"
@@ -2266,94 +2313,31 @@ sectors, besides looking forward to spread worldwide.</p>
 
 						<div class="row text-center align-items-end">
 							<!-- Pricing Table-->
-							<div class="col-lg-4 mb-5 mb-lg-0">
-								<div class="bg-white p-5 rounded-lg shadow">
-									<h1 class="h6 text-uppercase font-weight-bold mb-4">Basic</h1>
-									<h2 class="h1 font-weight-bold">
-										$199<span class="text-small font-weight-normal ml-2">/
-											month</span>
-									</h2>
-
-									<div class="custom-separator my-4 mx-auto bg-primary"></div>
-
-									<ul class="list-unstyled my-5 text-small text-left">
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											Lorem ipsum dolor sit amet</li>
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											Sed ut perspiciatis</li>
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											At vero eos et accusamus</li>
-										<li class="mb-3 text-muted"><i class="fa fa-times mr-2"></i>
-											<del>Nam libero tempore</del></li>
-										<li class="mb-3 text-muted"><i class="fa fa-times mr-2"></i>
-											<del>Sed ut perspiciatis</del></li>
-										<li class="mb-3 text-muted"><i class="fa fa-times mr-2"></i>
-											<del>Sed ut perspiciatis</del></li>
-									</ul>
-								</div>
-							</div>
+							<div class="col-lg-4 mb-5 mb-lg-0"></div>
 							<!-- END -->
 
 
 							<!-- Pricing Table-->
 							<div class="col-lg-4 mb-5 mb-lg-0">
 								<div class="bg-white p-5 rounded-lg shadow">
-									<h1 class="h6 text-uppercase font-weight-bold mb-4">Pro</h1>
+									<h1 class="h6 text-uppercase font-weight-bold mb-4">One
+										Account</h1>
 									<h2 class="h1 font-weight-bold">
-										$399<span class="text-small font-weight-normal ml-2">/
-											month</span>
+										<span class='text-muted' style='font-size: 25px;'><del>20$</del>
+										</span>10$<span class="text-small font-weight-normal ml-2">/
+											Year</span>
 									</h2>
 
 									<div class="custom-separator my-4 mx-auto bg-primary"></div>
 
-									<ul
-										class="list-unstyled my-5 text-small text-left font-weight-normal">
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											Lorem ipsum dolor sit amet</li>
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											Sed ut perspiciatis</li>
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											At vero eos et accusamus</li>
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											Nam libero tempore</li>
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											Sed ut perspiciatis</li>
-										<li class="mb-3 text-muted"><i class="fa fa-times mr-2"></i>
-											<del>Sed ut perspiciatis</del></li>
-									</ul>
+
 								</div>
 							</div>
 							<!-- END -->
 
 
 							<!-- Pricing Table-->
-							<div class="col-lg-4">
-								<div class="bg-white p-5 rounded-lg shadow">
-									<h1 class="h6 text-uppercase font-weight-bold mb-4">Enterprise</h1>
-									<h2 class="h1 font-weight-bold">
-										$899<span class="text-small font-weight-normal ml-2">/
-											month</span>
-									</h2>
-
-									<div class="custom-separator my-4 mx-auto bg-primary"></div>
-
-									<ul
-										class="list-unstyled my-5 text-small text-left font-weight-normal">
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											Lorem ipsum dolor sit amet</li>
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											Sed ut perspiciatis</li>
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											At vero eos et accusamus</li>
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											Nam libero tempore</li>
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											Sed ut perspiciatis</li>
-										<li class="mb-3"><i class="fa fa-check mr-2 text-primary"></i>
-											Sed ut perspiciatis</li>
-									</ul>
-								</div>
-							</div>
+							<div class="col-lg-4"></div>
 							<!-- END -->
 
 
@@ -2379,21 +2363,21 @@ sectors, besides looking forward to spread worldwide.</p>
 										<div class="info-box">
 											<i class="bx bx-map"></i>
 											<h3>Our Address</h3>
-											<p>Birzeit, Ramallah</p>
+											<p>Ramallah</p>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="info-box mt-4">
 											<i class="bx bx-envelope"></i>
 											<h3>Email Us</h3>
-											<p>info@example.com</p>
+											<p>canar.info1@gmail.com</p>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="info-box mt-4">
 											<i class="bx bx-phone-call"></i>
 											<h3>Call Us</h3>
-											<p>+970590000000</p>
+											<p>+970592051710</p>
 										</div>
 									</div>
 								</div>
@@ -2401,35 +2385,10 @@ sectors, besides looking forward to spread worldwide.</p>
 							</div>
 
 							<div class="col-lg-6 mt-4 mt-lg-0">
-								<form:form action="/" method="post" modelAttribute="newMessage"
-									class="asd">
-									<div class="row">
-										<div class="col-md-6 form-group">
-											<form:errors path="name" />
-											<form:input path="name" type="text" name="name"
-												class="form-control" id="name" placeholder="Your Name"></form:input>
-										</div>
-										<div class="col-md-6 form-group mt-3 mt-md-0">
-											<form:errors path="email" />
-											<form:input path="email" type="email" class="form-control"
-												name="email" id="email" placeholder="Your Email"></form:input>
-										</div>
-									</div>
-									<div class="form-group mt-3">
-										<form:errors path="subject" />
-										<form:input path="subject" type="text" class="form-control"
-											name="subject" id="subject" placeholder="Subject"></form:input>
-									</div>
-									<div class="form-group mt-3">
-										<form:errors path="message" />
-										<form:textarea path="message" class="form-control"
-											name="message" rows="5" placeholder="Message"></form:textarea>
-									</div>
+								<div class="pic" style='display:flex; justify-content:center;'>
+									<img src="/img/can.png" class="img-fluid" alt="">
+								</div>
 
-									<div class="text-center">
-										<button type="submit">Send Message</button>
-									</div>
-								</form:form>
 							</div>
 
 						</div>
@@ -2442,59 +2401,7 @@ sectors, besides looking forward to spread worldwide.</p>
 
 	<!-- ======= Footer ======= -->
 	<footer id="footer">
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-lg-3 col-md-6">
-						<div class="footer-info">
-							<h3>CanAR</h3>
-							<p>
-								Brizeit <br> Ramallah<br> <br> <strong>Phone:</strong>
-								+970590000000<br> <strong>Email:</strong> info@example.com<br>
-							</p>
-							<div class="social-links mt-3">
-								<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-								<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-								<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-2 col-md-6 footer-links">
-						<h4>Useful Links</h4>
-						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">About
-									us</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Terms
-									of service</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Privacy
-									policy</a></li>
-						</ul>
-					</div>
-
-					<div class="col-lg-3 col-md-6 footer-links">
-						<h4>Our Services</h4>
-						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web
-									Design</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web
-									Development</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Product
-									Management</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Graphic
-									Design</a></li>
-						</ul>
-					</div>
-
-
-				</div>
-			</div>
-		</div>
-		</div>
+		
 	</footer>
 	<!-- End Footer -->
 

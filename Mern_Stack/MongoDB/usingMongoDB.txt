@@ -1,0 +1,124 @@
+> use my_first_db
+switched to db my_first_db
+
+> db.createCollection("first_coll")
+{ "ok" : 1 }
+
+> db.first_coll.insert({name: "ahmad", home_state: "us", lucky_number:"1", birthday: {month:12, day:8, year: 2001}})
+WriteResult({ "nInserted" : 1 })
+> db.first_coll.insert({name: "ahmadas", home_state: "uss", lucky_number:"1", birthday: {month:12, day:8, year: 2011}})
+WriteResult({ "nInserted" : 1 })
+> db.first_coll.insert({name: "ahmadasas", home_state: "usasds", lucky_number:"11", birthday: {month:2, day:81, year: 2021}})
+WriteResult({ "nInserted" : 1 })
+> db.first_coll.insert({name: "ahmadaassas", home_state: "usasdsddd", lucky_number:"11", birthday: {month:2, day:81, year: 2021}})
+WriteResult({ "nInserted" : 1 })
+> db.first_coll.insert({name: "ahmadaasssas", home_state: "usasdsdddd", lucky_number:"111", birthday: {month:2, day:81, year: 2021}})
+WriteResult({ "nInserted" : 1 })
+
+> db.first_coll.find().pretty()
+{
+        "_id" : ObjectId("610125255d7ce21249087050"),
+        "name" : "ahmad",
+        "home_state" : "us",
+        "lucky_number" : "1",
+        "birthday" : {
+                "month" : 12,
+                "day" : 8,
+                "year" : 2001
+        }
+}
+{
+        "_id" : ObjectId("610125315d7ce21249087051"),
+        "name" : "ahmadas",
+        "home_state" : "uss",
+        "lucky_number" : "1",
+        "birthday" : {
+                "month" : 12,
+                "day" : 8,
+                "year" : 2011
+        }
+}
+{
+        "_id" : ObjectId("610125415d7ce21249087052"),
+        "name" : "ahmadasas",
+        "home_state" : "usasds",
+        "lucky_number" : "11",
+        "birthday" : {
+                "month" : 2,
+                "day" : 81,
+                "year" : 2021
+        }
+}
+{
+        "_id" : ObjectId("610125485d7ce21249087053"),
+        "name" : "ahmadaassas",
+        "home_state" : "usasdsddd",
+        "lucky_number" : "11",
+        "birthday" : {
+                "month" : 2,
+                "day" : 81,
+                "year" : 2021
+        }
+}
+{
+        "_id" : ObjectId("610125545d7ce21249087054"),
+        "name" : "ahmadaasssas",
+        "home_state" : "usasdsdddd",
+        "lucky_number" : "111",
+        "birthday" : {
+                "month" : 2,
+                "day" : 81,
+                "year" : 2021
+        }
+}
+
+> db.first_coll.find({$or:[{home_state: {"$in":["us","uss"]}}]}).pretty()
+{
+        "_id" : ObjectId("610125255d7ce21249087050"),
+        "name" : "ahmad",
+        "home_state" : "us",
+        "lucky_number" : "1",
+        "birthday" : {
+                "month" : 12,
+                "day" : 8,
+                "year" : 2001
+        }
+}
+{
+        "_id" : ObjectId("610125315d7ce21249087051"),
+        "name" : "ahmadas",
+        "home_state" : "uss",
+        "lucky_number" : "1",
+        "birthday" : {
+                "month" : 12,
+                "day" : 8,
+                "year" : 2011
+        }
+}
+
+> db.first_coll.find({lucky_number: {$gt:3}}).pretty()
+
+> db.first_coll.find({lucky_number: {$lte:3}}).pretty()
+
+> db.first_coll.find({lucky_number: {$lte:9, $gte:1}}).pretty()
+
+> db.first_coll.update({}, {$set: {"intrestes": ["brunch", "MongDB", "coding"]}}, {upsert:false, multi:true})
+WriteResult({ "nMatched" : 5, "nUpserted" : 0, "nModified" : 5 })
+
+> db.first_coll.update({name: "ahmadas"}, {$push: {"intrestes": "asd"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+> db.first_coll.update({name: "ahmadas"}, {$push: {"intrestes": "taxes"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+> db.first_coll.remove({intrestes: "taxes"})
+WriteResult({ "nRemoved" : 1 })
+
+> db.first_coll.deleteMany({"home_state": "us"})
+{ "acknowledged" : true, "deletedCount" : 1 }
+
+> db.first_coll.deleteOne({"home_state": "uss"})
+{ "acknowledged" : true, "deletedCount" : 1 }
+
+> db.first_coll.deleteOne({"Lucky_number": {$gt: "5"}})
+{ "acknowledged" : true, "deletedCount" : 0 }
