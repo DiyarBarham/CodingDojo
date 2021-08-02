@@ -22,7 +22,7 @@ const Task = (props) => {
             {props.textArray.map( (tex, i) => {
                 return( 
                     <div>
-                <p style={ tex.isChecked ? {"text-decoration":"line-through"} : {"color":"red"}}  key={i}>
+                <p style={ tex.isChecked ? {"text-decoration":"line-through"} : {"color":"  black"}}  key={i}>
                     {tex.text}
                     <input id={i} type="checkbox" checked={tex.isChecked} onChange={ (e) => props.checkedList(e, i)}/>
                 
